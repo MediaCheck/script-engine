@@ -1,0 +1,24 @@
+{
+  "name": "script-engine",
+  "version": "0.0.39",
+  "description": "script-engine is component for run, debug and test JavaScript or TypeScript programs in safe scope",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "dependencies": {
+    "acorn": "^4.0.4",
+    "escodegen": "^1.8.1",
+    "source-map": "^0.5.6",
+    "typescript": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node_modules/typescript/bin/tsc;node build/tests/tests.js",
+    "build": "rm -rf build;node_modules/typescript/bin/tsc"
+  },
+  "contributors": [
+    "David Hrádek <david.hradek@byzance.cz> (http://byzance.cz/)",
+    "David Uhlíř <david.uhlir@byzance.cz> (http://byzance.cz/)"
+  ],
+  "author": "David #1 & David #2",
+  "license": "UNLICENSED"
+}

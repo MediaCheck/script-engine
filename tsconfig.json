@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "outDir": "./build"
+  },
+  "filesGlob": [
+    "./**/*.ts",
+    "!./build/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ]
+}
